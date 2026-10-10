@@ -9,6 +9,10 @@ assets/
   css/styles.css   design tokens at the top (:root)
   js/main.js       CONFIG (WhatsApp number, price) and form handler
   img/favicon.svg
+  img/og-image.png  social share image (1200x630)
+robots.txt
+sitemap.xml
+demos/             four concept demo sites (noindex)
 ```
 
 ## Run locally
@@ -29,4 +33,3 @@ Any static host works (Vercel, Netlify, GitHub Pages, cPanel). Point `studio.onl
 - Set the real price
 - Add a testimonial about a website (not invented)
 - Build full demo pages for each concept
-- Add `og-image.png` and Open Graph tags
