@@ -127,3 +127,12 @@ legend { font-weight: 500; font-size: 16px; margin-bottom: 10px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- packages (Starter / Business) ---------- */
+.pkg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 28px; }
+.pkg-grid .price-card h3 { font-size: clamp(24px, 3vw, 30px); }
+.pkg-grid .price-card ul { grid-template-columns: 1fr; }
+.price-card .detail { margin: -14px 0 22px; color: var(--muted); }
+.pkg-note { color: var(--muted); font-size: 15px; margin-top: 18px; max-width: 70ch; }
+.pkg-note a, .foot-links a { color: var(--teal); font-weight: 700; }
+@media (max-width: 860px) { .pkg-grid { grid-template-columns: 1fr; } }
