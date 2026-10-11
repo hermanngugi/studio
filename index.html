@@ -89,22 +89,41 @@
       </ol>
     </section>
 
-    <section class="wrap price" aria-labelledby="price-h">
-      <div class="price-card">
-        <h2 id="price-h">Professional Business Website</h2>
-        <p class="amount" data-price>From KES 25,000</p>
-        <ul>
-          <li>Premium, modern design</li><li>Mobile optimised</li><li>WhatsApp integration</li>
-          <li>Google Maps and location</li><li>Services or products</li><li>Contact or enquiry form</li>
-          <li>Basic SEO</li><li>Deployment</li>
-        </ul>
-        <a class="btn" href="#start">Get started</a>
+    <section class="wrap" id="packages" aria-labelledby="price-h">
+      <h2 id="price-h">Clear packages. A written quote before we start.</h2>
+      <div class="pkg-grid">
+        <div class="price-card">
+          <h3>Starter website</h3>
+          <p class="amount" data-offer="website/starter">From KES 26,000</p>
+          <p class="detail">Up to 5 pages</p>
+          <ul>
+            <li>Premium, modern design</li><li>Mobile optimised</li><li>WhatsApp integration</li>
+            <li>Google Maps and location</li><li>Services or products</li><li>Contact or enquiry form</li>
+            <li>Basic SEO</li><li>Deployment</li>
+          </ul>
+          <a class="btn" href="#start">Get started</a>
+        </div>
+        <div class="price-card">
+          <h3>Business website</h3>
+          <p class="amount" data-offer="website/business">From KES 45,500</p>
+          <p class="detail">Up to 10 pages</p>
+          <ul>
+            <li>Everything in Starter</li><li>Up to 10 pages</li><li>Blog</li>
+            <li>SEO foundations</li>
+          </ul>
+          <a class="btn" href="#start">Get started</a>
+        </div>
       </div>
+      <p class="pkg-note">Hosting, updates and backups: <span data-offer="website/care">From KES 3,900/mo</span>. Booking, e-commerce and institutional sites are quoted individually.</p>
+      <p class="pkg-note">Need more than a website? <a href="https://onlineworker.online/services/digital-marketing-seo/?src=studio">SEO and marketing</a>, <a href="https://onlineworker.online/services/graphic-design-branding/?src=studio">logo and branding</a> and the <a href="https://onlineworker.online/services/digital-growth-bundle/?src=studio">monthly Growth Bundle</a> are on the main site.</p>
+    </section>
+
+    <section class="wrap" aria-labelledby="trust-h">
       <div class="trust">
-        <h3>Built by OnlineWorker</h3>
+        <h3 id="trust-h">Built by OnlineWorker</h3>
         <p>I'm Herman Ngugi, a digital consultant in Nairobi. I've supported ICT systems at public institutions and built websites for local businesses, including Goward Funeral Service.</p>
         <p>You will see your design before we launch.</p>
-        <a href="https://onlineworker.online/portfolio/goward-funeral-service/">Read the Goward case study</a>
+        <a href="https://onlineworker.online/portfolio/goward-funeral-service/?src=studio">Read the Goward case study</a>
       </div>
     </section>
 
@@ -132,9 +151,13 @@
 
   <footer class="foot">
     <p>© <span id="year">2026</span> OnlineWorker Studio, Nairobi. Concept brands shown are fictional.</p>
-    <p><a href="https://onlineworker.online">onlineworker.online</a> · <a href="tel:+254795107114">+254 795 107 114</a></p>
+    <p class="foot-links"><a href="https://onlineworker.online/?src=studio">Main site</a> · <a href="https://onlineworker.online/services/?src=studio">All services</a> · <a href="https://onlineworker.online/portfolio/?src=studio">Case studies</a> · <a href="https://librarian.onlineworker.online/?src=studio">Library services</a></p>
+    <p><a href="tel:+254795107114">+254 795 107 114</a></p>
   </footer>
 
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script src="https://onlineworker.online/assets/network.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
