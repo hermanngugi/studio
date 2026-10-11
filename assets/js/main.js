@@ -3,7 +3,7 @@
 /* Edit these values to configure the site. */
 const CONFIG = {
   whatsapp: '254795107114',      // international format, no + or spaces
-  price: 'From KES XX,XXX'       // replace once pricing is decided
+  price: 'From KES 25,000'
 };
 
 document.getElementById('year').textContent = new Date().getFullYear();
