@@ -1,0 +1,57 @@
+/* =========================================================
+   OnlineWorker shared foundation
+   Identical file in Main, Studio and Library. Edit one, copy to all.
+   Shared: typefaces, neutrals, accent palette, shape scale, network bar.
+   Not shared: each site picks its own lead accent and shape language
+   by overriding --ow-accent* after this file loads.
+   ========================================================= */
+:root {
+  /* typefaces: Instrument Sans (display) + Inter (text) */
+  --ow-display: "Instrument Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --ow-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ow-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* neutrals */
+  --ow-navy: #0e1a33;
+  --ow-navy-deep: #0a1426;
+  --ow-navy-soft: #16264a;
+  --ow-ink: #10182b;
+  --ow-ink-soft: #4a5468;
+  --ow-ink-faint: #7a8397;
+  --ow-paper: #f6f3ee;
+  --ow-paper-deep: #efebe2;
+  --ow-card: #fffdfa;
+  --ow-line: #e2dfd6;
+  --ow-line-on-navy: rgba(255, 255, 255, 0.14);
+  --ow-text-on-navy: #c9d1e6;
+
+  /* the four family hues: base / light (on navy) / text (on paper) */
+  --ow-cobalt: #2c4bdb;     --ow-cobalt-l: #8fa6ff;    --ow-cobalt-t: #1f37a8;
+  --ow-vermilion: #e8632c;  --ow-vermilion-l: #ff9060; --ow-vermilion-t: #b8400f;
+  --ow-gold: #c99a1e;       --ow-gold-l: #e9c14f;      --ow-gold-t: #8a6606;
+  --ow-teal: #12907f;       --ow-teal-l: #3fcbb5;      --ow-teal-t: #0c6b5e;
+
+  /* each site overrides these three */
+  --ow-accent: var(--ow-cobalt);
+  --ow-accent-l: var(--ow-cobalt-l);
+  --ow-accent-t: var(--ow-cobalt-t);
+
+  /* shape + motion scale */
+  --ow-radius-sm: 8px;
+  --ow-radius: 12px;
+  --ow-radius-lg: 20px;
+  --ow-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+::selection { background: var(--ow-accent); color: #fff; }
+
+/* Network bar: the same strip at the top of every OnlineWorker site */
+.ow-bar { background: var(--ow-navy-deep); color: var(--ow-text-on-navy); font: 500 0.78rem/1 var(--ow-sans); letter-spacing: 0.02em; }
+.ow-bar-in { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); min-height: 34px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.ow-bar-lead { font-family: var(--ow-display); font-weight: 600; color: #fff; letter-spacing: 0.01em; }
+.ow-bar nav { display: flex; gap: 4px; }
+.ow-bar a { color: var(--ow-text-on-navy); text-decoration: none; padding: 11px 10px; border-radius: 4px; transition: color 0.2s var(--ow-ease); }
+.ow-bar a:hover { color: #fff; }
+.ow-bar a[aria-current] { color: #fff; box-shadow: inset 0 -2px 0 var(--ow-accent-l); }
+.ow-bar a:focus-visible { outline: 2px solid var(--ow-accent-l); outline-offset: -2px; }
+@media (max-width: 480px) { .ow-bar-lead { display: none; } .ow-bar-in { justify-content: center; } }
